@@ -17,16 +17,23 @@ let collection = [];
 
 //title, artist, year published 
 //addToCollection function start 
+// add 6 album 
 
+function addToCollection(name, singer, publish){
 
-
-function addToCollection(){
-    const newAlbum ={
-        title: "x",
-        artist: "test",
-        yearPublished: 2020,
-    }
-    return collection.push(newAlbum);
+let newAlbum = {
+    title: name,
+    artist: singer,
+    yearPublished: publish,
 }
+   return collection.push(newAlbum);
+}
+console.log( addToCollection("Punisher", "Phoebe Bridger", "2020" ));
+console.log( addToCollection("Sucker Supreme", "Rosie Tucker", "2021" ) );
+console.log( addToCollection("Harry's House", "Harry Styles", "2022" ) );
+console.log( addToCollection("Mr. Morale and the big steppers", "Kendrick Lamar", "2022" ) );
+console.log( addToCollection("Jubilee", "Japanese Breakfast", "2021" ) );
+console.log( addToCollection("Whats the story morning glory?", "Oasis", "1995" ) );
+console.log("lets see the collection", collection );
 
-console.log("testing the add to collection", collection);
+// addtocollection function complete
