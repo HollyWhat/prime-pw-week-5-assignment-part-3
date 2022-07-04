@@ -37,3 +37,22 @@ console.log( addToCollection("Whats the story morning glory?", "Oasis", "1995" )
 console.log("lets see the collection", collection );
 
 // addtocollection function complete
+
+// begin the show collection function 
+/**
+ * 
+ * @param takes in the array param - tells us the number of items 
+ * 
+ * @return will return a loop of info that shows the title, artist, year
+ */
+
+//will need the collection array 
+
+let showRecords =[];
+
+function showCollection(collectionLength){
+for(let i =0; i < collection.length; i++);
+return showRecords;
+
+}
+console.log("test the show records function", showCollection(collection.length[0]));
