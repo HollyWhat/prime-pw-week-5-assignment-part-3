@@ -48,11 +48,23 @@ console.log("lets see the collection", collection );
 
 //will need the collection array 
 
-let showRecords =[];
+let newAlbum = [];
+function showCollection(){
+    console.log("the number of items in the array is", );
+for(let i =0; i < collection.length; i++){
+    console.log("testing my loop", collection[i]);
+}
+return newAlbum;
 
-function showCollection(collectionLength){
-for(let i =0; i < collection.length; i++);
-return showRecords;
 
 }
-console.log("test the show records function", showCollection(collection.length[0]));
+console.log("the info for my album is", showCollection());
+// loop only shows if this console log is active
+
+
+// findByArtist function 
+// Take in artist (a string) parameter
+//Create an array to hold any results, empty to start
+//Loop through the collection and add any objects with a matching artist to the array.
+//Return the array with the matching results. If no results are found, return an empty array.
+ 
