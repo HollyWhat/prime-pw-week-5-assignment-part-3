@@ -54,7 +54,7 @@ function showCollection(){
 for(let i =0; i < collection.length; i++){
     console.log("testing my loop", collection[i]);
 }
-return newAlbum;
+return;
 
 
 }
