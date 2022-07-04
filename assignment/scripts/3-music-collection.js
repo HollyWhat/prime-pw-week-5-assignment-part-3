@@ -28,13 +28,13 @@ let newAlbum = {
 }
    return collection.push(newAlbum);
 }
-console.log( addToCollection("Punisher", "Phoebe Bridger", "2020" ));
+console.log( addToCollection("Punisher", "Phoebe Bridgers", "2020" ));
 console.log( addToCollection("Sucker Supreme", "Rosie Tucker", "2021" ) );
 console.log( addToCollection("Harry's House", "Harry Styles", "2022" ) );
 console.log( addToCollection("Mr. Morale and the big steppers", "Kendrick Lamar", "2022" ) );
 console.log( addToCollection("Jubilee", "Japanese Breakfast", "2021" ) );
 console.log( addToCollection("Whats the story morning glory?", "Oasis", "1995" ) );
-console.log("lets see the collection", collection );
+console.table( collection );
 
 // addtocollection function complete
 
@@ -48,17 +48,22 @@ console.log("lets see the collection", collection );
 
 //will need the collection array 
 
-let newAlbum = [];
-function showCollection(){
-    console.log("the number of items in the array is", );
-for(let i =0; i < collection.length; i++){
-    console.log("testing my loop", collection[i]);
-}
-return;
 
 
+function showCollection(){  
+ for(let i =0; i < collection.length; i++){
+    console.log("show collection",collection[i]);
+    if(collection[i]){
+        console.log(collection[i].title, collection[i].artist, collection[i].yearPublished);
+    }
+ return collection;
 }
-console.log("the info for my album is", showCollection());
+
+}
+console.log("testing", showCollection(collection));
+
+
+//console.log("the info for my album is", showCollection());
 // loop only shows if this console log is active
 
 
