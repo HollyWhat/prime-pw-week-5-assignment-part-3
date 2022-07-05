@@ -50,17 +50,16 @@ console.table( collection );
 
 
 
-function showCollection(){  
- for(let i =0; i < collection.length; i++){
-    console.log("show collection",collection[i]);
-    if(collection[i]){
-        console.log(collection[i].title, collection[i].artist, collection[i].yearPublished);
+function showCollection(music){ 
+ for(let i =0; i < music.length; i++){
+    if(music[i]){
+        console.log(music[i].title +  " by " + music[i].artist + " in " + music[i].yearPublished);
     }
- return collection;
-}
 
 }
-console.log("testing", showCollection(collection));
+return music;
+}
+console.log("testing",showCollection(collection)); 
 
 
 //console.log("the info for my album is", showCollection());
