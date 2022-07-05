@@ -63,6 +63,7 @@ console.log("testing",showCollection(collection));
 
 
 
+
 // findByArtist function 
 // Take in artist (a string) parameter
 //Create an array to hold any results, empty to start
@@ -71,17 +72,23 @@ console.log("testing",showCollection(collection));
  
 
 
-
+let emptyArray = [];
 function findByArtist(artistInput, collectionInput){
-    let emptyArray = [];
-    for(let artist of collectionInput){
-        if(artistInput === artist.artist)
-        return emptyArray.push(artist);
-    } 
     
+    for(let artist of collectionInput) {
+        if(artistInput === artist.artist){
+            return emptyArray.push(artist);
+        }  
+    }
     }
 
 
 
 
+
+
+
 console.log("testing the find function", findByArtist('Rosie Tucker',collection));
+console.log(findByArtist('Harry Styles', collection ));
+console.log("testing - should return undefined", findByArtist('tame impala', collection )); 
+console.log("see array", emptyArray);
