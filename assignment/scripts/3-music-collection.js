@@ -62,9 +62,6 @@ return music;
 console.log("testing",showCollection(collection)); 
 
 
-//console.log("the info for my album is", showCollection());
-// loop only shows if this console log is active
-
 
 // findByArtist function 
 // Take in artist (a string) parameter
@@ -72,3 +69,19 @@ console.log("testing",showCollection(collection));
 //Loop through the collection and add any objects with a matching artist to the array.
 //Return the array with the matching results. If no results are found, return an empty array.
  
+
+
+
+function findByArtist(artistInput, collectionInput){
+    let emptyArray = [];
+    for(let artist of collectionInput){
+        if(artistInput === artist.artist)
+        return emptyArray.push(artist);
+    } 
+    
+    }
+
+
+
+
+console.log("testing the find function", findByArtist('Rosie Tucker',collection));
